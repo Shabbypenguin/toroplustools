@@ -78,10 +78,10 @@ cdb
 #cdb
 
 repo start auto packages/apps/Phone
-echo ### Applying hakcenter's fix ###
+echo "### fix ringtones"
 cdv packages/apps/Phone
 git reset --hard
-git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Phone refs/changes/52/19252/1 && git checkout FETCH_HEAD
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Phone refs/changes/59/21259/1 && git cherry-pick FETCH_HEAD
 cdb
 
 ##### SUCCESS ####
