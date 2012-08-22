@@ -84,6 +84,13 @@ git reset --hard
 git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Phone refs/changes/12/21512/1 && git cherry-pick FETCH_HEAD
 cdb
 
+repo start vendor/cm
+echo "### New Bootanimation"
+cdv vendor/cm
+git reset --hard
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_vendor_cm refs/changes/99/21799/2 && git cherry-pick FETCH_HEAD
+cdb
+
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
