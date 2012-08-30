@@ -73,6 +73,13 @@ git reset --hard
 git fetch git://git.teameos.org/eos/platform/packages/apps/Phone refs/changes/63/963/1 && git cherry-pick FETCH_HEAD
 cdb
 
+repo start auto kernel/samsung/tuna
+echo "### Fix toroplus compass 180 degree bug"
+cdv kernel/samsung/tuna
+git reset --hard
+git fetch http://r.cyanogenmod.com/CyanogenMod/android_kernel_samsung_tuna refs/changes/05/17105/1 && git cherry-pick FETCH_HEAD
+cdb
+
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
