@@ -1,4 +1,4 @@
-Epic Build Instructions
+Toroplus Build Instructions
 =======================
 ```
 mkdir cm10
